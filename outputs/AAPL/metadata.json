@@ -1,0 +1,31 @@
+{
+    "ticker": "AAPL",
+    "start_date": "2021-01-01",
+    "end_date": "2025-12-31",
+    "rows_raw": 1254,
+    "rows_cleaned": 1254,
+    "rows_feature_engineered": 1254,
+    "rows_labeled": 1254,
+    "rows_training": 1003,
+    "rows_testing": 251,
+    "test_size": 0.2,
+    "random_state": 42,
+    "features": [
+        "Return",
+        "RVOL",
+        "TrendDiff",
+        "PricePosition",
+        "Breakout",
+        "Breakdown"
+    ],
+    "target": "Label",
+    "thresholds": {
+        "trend_threshold": 0.01,
+        "rvol_high": 1.2,
+        "return_positive": 0.01,
+        "return_negative": -0.01,
+        "low_position": 0.35,
+        "high_position": 0.65
+    },
+    "best_model": "Random Forest"
+}

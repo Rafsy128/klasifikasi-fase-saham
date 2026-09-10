@@ -1,0 +1,31 @@
+{
+    "Random Forest": {
+        "metrics": {
+            "accuracy": 0.5059760956175299,
+            "precision_macro": 0.4761437411693166,
+            "recall_macro": 0.4335763888888889,
+            "f1_macro": 0.41001299520324114
+        },
+        "best_params": {
+            "max_depth": 5,
+            "max_features": "sqrt",
+            "min_samples_leaf": 1,
+            "n_estimators": 200
+        }
+    },
+    "Support Vector Machine": {
+        "metrics": {
+            "accuracy": 0.47410358565737054,
+            "precision_macro": 0.4489467202488981,
+            "recall_macro": 0.41079861111111116,
+            "f1_macro": 0.38736575301287135
+        },
+        "best_params": {
+            "C": 10,
+            "gamma": "scale",
+            "kernel": "rbf"
+        }
+    },
+    "best_model": "Random Forest",
+    "selection_metric": "Macro F1"
+}

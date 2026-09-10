@@ -1,0 +1,31 @@
+{
+    "ticker": "BBCA.JK",
+    "start_date": "2021-01-01",
+    "end_date": "2025-12-31",
+    "rows_raw": 1205,
+    "rows_cleaned": 1205,
+    "rows_feature_engineered": 1205,
+    "rows_labeled": 1205,
+    "rows_training": 964,
+    "rows_testing": 241,
+    "test_size": 0.2,
+    "random_state": 42,
+    "features": [
+        "Return",
+        "RVOL",
+        "TrendDiff",
+        "PricePosition",
+        "Breakout",
+        "Breakdown"
+    ],
+    "target": "Label",
+    "thresholds": {
+        "trend_threshold": 0.01,
+        "rvol_high": 1.2,
+        "return_positive": 0.01,
+        "return_negative": -0.01,
+        "low_position": 0.35,
+        "high_position": 0.65
+    },
+    "best_model": "Random Forest"
+}
